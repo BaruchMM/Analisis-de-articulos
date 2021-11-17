@@ -1,8 +1,11 @@
 ---
-title: "Proyecto 2"
-author: "Baruch Mejía Martínez, Axel Pérez Ruiz"
+title: "Análisis estadístico de Age-dependent Gender Differences in COVID-19 in Mainland
+  China"
+author: "Baruch Mejía Martínez"
 date: "19/10/2021"
-output: pdf_document
+output:
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -14,7 +17,7 @@ library(questionr)
 
 Cargamos los datos utilizados en el artículo
 
-```{r cars}
+```{r}
 attack = read.csv("Attack.csv",header=TRUE,sep=",")
 n=12
 attack
@@ -49,7 +52,7 @@ write.csv(Razon_de_riesgo , 'plotear_Riesgo.csv',row.names = F, col.names = F)
 
 Cargamos los datos utilizados en el artículo
 
-```{r cars}
+```{r}
 severe = read.csv("Severe_Critical.csv",header=TRUE,sep=",")
 n=12
 severe
@@ -81,7 +84,7 @@ write.csv(Severe_and_Critical , 'plotear_severe.csv',row.names = F, col.names = 
 
 Cargamos los datos utilizados en el artículo
 
-```{r cars}
+```{r}
 fatal = read.csv("Fatal.csv",header=TRUE,sep=",")
 n=12
 fatal
@@ -120,5 +123,3 @@ fatales
 write.csv(fatales , 'plotear_fatal.csv',row.names = F, col.names = F)
 
 ```
-
-
