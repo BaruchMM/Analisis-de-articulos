@@ -3,13 +3,17 @@ title: "Análisis estadístico de Age-dependent Gender Differences in COVID-19 i
   China"
 author: "Baruch Mejía Martínez"
 date: "19/10/2021"
-output:
-  html_document:
-    df_print: paged
+output: rmarkdown::github_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  fig.path = "README_figs/README-"
+)
+```
+Paquetes necesarios:
+```{r,message=FALSE,warning=FALSE}
 library(questionr)
 ```
 
